@@ -30,6 +30,6 @@ With a strong grasp of MVC and internal CRUD operations, I'm now moving towards:
 
 ## Program Illustration
 ### **Click on the thumbnail** below to watch an illustration of the program
-<a href="illustration/illustration.mp4">
+<a href="https://drive.google.com/file/d/1qm6VNc0FrEHsXOgaTbzwWlOKqMJqAmyQ/view?usp=sharing">
   <img src="illustration/thumbnail.png" alt="Watch the video" width="700" />
 </a>
