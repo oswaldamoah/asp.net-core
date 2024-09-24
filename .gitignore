@@ -1,0 +1,7 @@
+/.vscode
+/.editorconfig
+/ExpensesTracker.sln
+/ExpensesTracker/bin/
+/ExpensesTracker/wwwroot/
+/ExpensesTracker/obj/
+/ExpensesTracker/Properties/
