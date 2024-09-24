@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Hi there!</h1>
+    <a asp-action="Expenses" class="btn btn-primary">Overview</a> <!-- Bootstrap class used.
+    We didn't have to add asp-controller="Home" because the Index.cshtml is already in
+    the Home folder connected to the Home controller.
+    -->
+    <a asp-action="CreateEditExpense" class="btn btn-secondary">Create New</a>
+</div>

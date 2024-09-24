@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Expenses";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Expenses</h1>
+    <br />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Value
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach(var expense in Model){ // Foreach loop to display each 'expense' in cshtml 
+                    <tr>
+                        <td>
+                            @expense.Id
+                        </td>
+                        <td>
+                            @expense.Value
+                        </td>
+                        <td>
+                            @expense.Description
+                        </td>
+                        <td>
+                            <a class="btn btn-secondary" asp-action="CreateEditExpense" asp-route-id="@expense.Id">Edit</a>
+                            <a class="btn btn-secondary" asp-action="DeleteExpense" asp-route-id="@expense.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            } 
+        </tbody>
+    </table>
+     <br />
+    <hr />
+    <h3>Total Expenses: $@ViewBag.Total</h3>
+    <br />
+</div>
+
+

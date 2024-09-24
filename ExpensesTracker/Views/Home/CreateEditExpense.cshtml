@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Create/Edit";
+}
+
+<!--Initializing a model-->
+@model ExpensesTracker.Models.Expense
+<div >
+    <h1 class="display-4 text-center">Create/Edit an expense</h1>
+</div>
+
+<form asp-action="CreateEditExpenseForm" asp-controller="Home"> <!--Onclick of submit, the EditExpenseForm method runs--->
+    <input hidden class="form-control" type="number" placeholder="0" asp-for="Id"/> 
+    <!--entity creates automatic IDs, so this isn't necessary--->
+    <!--asp-for's value is connected to the model class' attributes, eg: Id--->
+
+    <label class="mt-4">Value $</label>
+    <input class="form-control" type="number" placeholder="0" asp-for="Value" step="0.01"/> 
+    <!--Step allows for increase or decrease--->
+
+    <label class="mt-4">Description</label>
+    <input class="form-control" type="text" placeholder="Add a description" asp-for="Description"/>
+
+
+    <button class="btn btn-primary mt-4 text-center" type="submit">Ok</button>
+    <!-- mt-4 is bootstrap css for margin top 4--->
+
+</form>
